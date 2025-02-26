@@ -1,3 +1,19 @@
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Creates calendar events for existing responses on the "Form Responses 1" sheet.
+ * Looks for the following columns:
+ *   - Event Name (6)
+ *   - Event Date (8)
+ *   - Setup Time (9)
+ *   - Start Time (10)
+ *   - End Time (11)
+ * If any of these columns are empty for a row, will log a message and skip it.
+ * If a row is missing a required field, will log a message and skip it.
+ * Logs a message for each row successfully processed with the event name, start time, and end time.
+ * Logs a message for each row with an error.
+ * Logs a message when done processing all responses.
+ */
+/******  0f98f493-25b9-4318-9595-3e7882e0c4f7  *******/
 function createEventsForExistingResponses() {
     const timeZone = "America/New_York"; // Eastern Time
     const calendarId = "id"; 

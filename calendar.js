@@ -1,3 +1,20 @@
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Triggered when a form is submitted.
+ * Creates a calendar event for the submitted form data.
+ * The form submission data is passed as an argument to this function.
+ * Requires the following columns in the form submission:
+ *   - Event Name (6)
+ *   - Event Date (8)
+ *   - Setup Time (9)
+ *   - Start Time (10)
+ *   - End Time (11)
+ * If any of these columns are empty for a row, will log a message and skip it.
+ * Logs a message for each row successfully processed with the event name, start time, and end time.
+ * Logs a message for each row with an error.
+ * Logs a message when done processing all responses.
+ */
+/******  e2003775-96f6-4041-8a41-0f999c2c4c59  *******/
 function createEventOnFormSubmit(e) {
   const timeZone = "America/New_York"; 
   const calendarId = "id"; 
